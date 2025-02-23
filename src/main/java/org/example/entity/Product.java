@@ -23,7 +23,7 @@ public class Product {
      private String description;
 
      @ManyToOne(fetch = FetchType.LAZY)
-     @Column(name = "category")
+     @JoinColumn(name = "category")
      private Category category;
 
      @CreationTimestamp
