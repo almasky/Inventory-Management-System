@@ -54,4 +54,15 @@ public class ProductDto {
     public void setCategoryId(Long categoryId) {
         this.categoryId = categoryId;
     }
+
+    @Override
+    public String toString() {
+        return "ProductDto{" +
+                "name='" + name + '\'' +
+                ", description='" + description + '\'' +
+                ", price=" + price +
+                ", quantity=" + quantity +
+                ", categoryId=" + categoryId +
+                '}';
+    }
 }
