@@ -1,0 +1,18 @@
+<configuration>
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- Suppress Hibernate debug logs -->
+    <logger name="org.hibernate" level="WARN" />
+    <logger name="org.hibernate.orm.deprecation" level="ERROR" />
+    <logger name="org.hibernate.orm.connections.pooling" level="ERROR" />
+    <logger name="org.hibernate.tool.hbm2ddl" level="ERROR" />
+    <logger name="org.jboss.logging" level="ERROR" />
+
+    <root level="DEBUG">
+        <appender-ref ref="STDOUT" />
+    </root>
+</configuration>
