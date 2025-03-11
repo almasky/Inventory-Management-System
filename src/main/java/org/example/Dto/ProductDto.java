@@ -8,34 +8,42 @@ public class ProductDto {
     private Long categoryId;
 
     public ProductDto() {
+
         super();
     }
 
     public ProductDto(String name, String description, Double price, Integer quantity, Long categoryId) {
+
         super();
     }
 
     public String getName() {
+
         return name;
     }
 
     public void setName(String name) {
+
         this.name = name;
     }
 
     public String getDescription() {
+
         return description;
     }
 
     public void setDescription(String description) {
+
         this.description = description;
     }
 
     public Double getPrice() {
+
         return price;
     }
 
     public void setPrice(Double price) {
+
         this.price = price;
     }
 
@@ -44,14 +52,17 @@ public class ProductDto {
     }
 
     public void setQuantity(Integer quantity) {
+
         this.quantity = quantity;
     }
 
     public Long getCategoryId() {
+
         return categoryId;
     }
 
     public void setCategoryId(Long categoryId) {
+
         this.categoryId = categoryId;
     }
 

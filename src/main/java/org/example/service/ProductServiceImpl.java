@@ -13,7 +13,7 @@ import java.util.List;
 
 public class ProductServiceImpl implements ProductService {
 
-    private SessionFactory sessionFactory = HibernateConfig.geSessionFactory();
+    private final SessionFactory sessionFactory = HibernateConfig.geSessionFactory();
 
     private final ProductDAO productDAO = new ProductDAOImpl(sessionFactory);
 

@@ -1,5 +1,6 @@
 package org.example.dao;
 
+import org.example.Dto.OrderDto;
 import org.example.entity.Product;
 
 import java.util.List;
@@ -16,6 +17,8 @@ public interface ProductDAO {
 
 
      Product findById(Long id);
+
+     List<Product> findAllById(List<Long> ids);
 
 
 }
